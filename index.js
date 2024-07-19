@@ -49,6 +49,9 @@ app.use('/lms', GetInstructorProfile);
 app.use('/lms', UpdateInstructorData);
 app.use('/lms', UpdateSubjectData);
 app.use('/lms', SubjectsInsertions);
+app.use('/', () => {
+  res.send(`hy there is my LMS`);
+})
 
 
 app.listen(PORT, () => {
